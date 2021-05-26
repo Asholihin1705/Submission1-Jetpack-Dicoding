@@ -1,0 +1,26 @@
+MovieViewModelTest:(Unit Test) :
+
+Memuat Movie:
+Memastikan data Movie tidak null.
+Memastikan jumlah data Movie sesuai dengan yang diharapkan.
+
+
+TvShowViewModelTest:(Unit Test): :
+
+Memuat TvShow:
+Memastikan data TvShow tidak null.
+Memastikan jumlah data TvShow sesuai dengan yang diharapkan.
+
+
+DetailMovieViewModelTest(Insterument Test): :
+
+Memuat Movie:
+Memastikan data Movie tidak null.
+Memastikan data Movie yang ada di aplikasi sesuai dengan yang diharapkan.
+
+
+DetailTvShowViewModelTest(Insterument Test):
+
+Memuat TvShow:
+Memastikan data TvShow tidak null.
+Memastikan data TvShow yang ada di aplikasi sesuai dengan yang diharapkan.

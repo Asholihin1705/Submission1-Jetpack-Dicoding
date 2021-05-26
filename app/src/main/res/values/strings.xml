@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">NobarYuh</string>
+    <string name="movies">Movies</string>
+    <string name="tv_shows">Tv Shows</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo_movies">Logo Movies</string>
+    <string name="creator">Creator</string>
+    <string name="tahun_realese">Tahun Realese</string>
+    <string name="overview">Overview</string>
+    <string name="favorite">Favorite</string>
+    <string name="share">Share</string>
+    <string name="sholihin">Ahmad Sholihin</string>
+    <string name="asholeeqeen41_gmail_com">asholeeqeen41@gmail.com</string>
+
+</resources>

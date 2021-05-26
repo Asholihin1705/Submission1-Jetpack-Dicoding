@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@android:color/holo_blue_bright"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:paddingStart="10dp"
+        android:paddingTop="7dp"
+        android:paddingEnd="13dp"
+        android:paddingBottom="7dp">
+
+        <com.github.siyamed.shapeimageview.RoundedImageView
+            android:id="@+id/item_logo"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_margin="8dp"
+            android:src="@android:color/holo_red_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/item_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_logo"
+            tools:text="Nama Movies"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/item_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/item_nama"
+            app:layout_constraintStart_toEndOf="@id/item_logo"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="40dp"
+            tools:text="Genre Movies"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/item_release"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/item_genre"
+            app:layout_constraintStart_toEndOf="@id/item_logo"
+            tools:text="Release"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/item_durasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/item_release"
+            app:layout_constraintStart_toEndOf="@id/item_logo"
+            tools:text="Durasi"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/item_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/material_on_background_disabled"
+            android:src="@drawable/ic_baseline_share"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_genre"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/share" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
